@@ -17,11 +17,18 @@ class ReverseArray{
 
 
     public static void main(String args[]){
+        
+        double s_time = System.currentTimeMillis();
+        ReverseArray ra = new ReverseArray();
         int ar [] = {20, 30, 40, 50, 60, 70};
+        System.out.println("Original Array: ");
+        ra.print_array(ar);
         int start = 0;
         int end = ar.length - 1;
-        ReverseArray ra = new ReverseArray();
+        
         ra.reverse_array(ar, start, end);
+        System.out.println("Reversed Array: ");
         ra.print_array(ar);
+        System.out.println("Time take to run Recursion approach: "+ (System.currentTimeMillis()-s_time));
     }
 }
