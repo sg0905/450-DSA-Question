@@ -25,16 +25,7 @@ public class setBits {
         System.out.println("Number of 1 BIT : " + count);
     }
 
-    // public void counts(Stack<Integer> stack){
-    //     int c = 0;
-    //     while(!stack.empty()){
-            
-    //         if(stack.pop()==1){
-    //             c += 1;
-    //         }
-    //     }
-    //     System.out.println("Number of 1 BIT : " + c);
-    // }
+
     public static void main(String args[]){
         double s_start = System.currentTimeMillis();
         int N = 10;
@@ -42,7 +33,7 @@ public class setBits {
         Stack <Integer> stack = new Stack<>();
         sb.bitfind(N, stack);
         sb.print_bits(stack);
-        // sb.counts(stack);
+        
         System.out.print("Time taken to runt : " + (System.currentTimeMillis()- s_start));
 
     }
