@@ -1,3 +1,6 @@
+//----------------------------------Method 1-------------------------------------------------------------------------------//
+
+
 // class AddString {
 //     public String addStrings(String num1, String num2) {
 //         int i = num1.length() - 1;
@@ -43,7 +46,7 @@
 
 
 
-
+//------------------------------------Method 2------------------------------------------------------------------//
 
 class AddString {
     public String addStrings(String num1, String num2) {
@@ -60,21 +63,10 @@ class AddString {
             if(j >= 0){
                 sum += num2.charAt(j--) - '0';
             }
-            // // sum = sum1 + sum2 + carry;
-            // if (sum >= base){
-            //     carry = 1;
-            //     sum = sum - base;
-            // }
-            // else{
-            //   carry = 0;  
-            // }
+            
             result.append(sum%base);
             carry = sum / base;
         }
-         
-        // if(carry == 1){
-        //     result.append(carry);
-        // }
         return result.reverse().toString();
     }
 
